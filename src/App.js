@@ -1,25 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import * as routes from './constants/routes';
+
+import Nav from './components/Nav';
+import LandingPage from './pages/landing';
+import SelectSkills from './pages/skill-selection';
+import Signup from './pages/signup';
+import Dashboard from './pages/dashboard';
+import NoMatch from './pages/noMatch';
+
 import './App.css';
 
+
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Router>
+          <div>
+            <Nav />
+            <Switch>
+              <Route 
+                exact path={routes.LANDING}
+                component={LandingPage}
+              />
+              <Route 
+                exact path={routes.SKILL_SELECT}
+                component={SelectSkills}
+              />
+              <Route 
+                exact path={routes.SIGNUP}
+                component={Signup}
+              />
+              <Route 
+                exact path={routes.DASHBOARD}
+                component={Dashboard}
+              />
+
+              <Route path="*" component={NoMatch} />
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }
