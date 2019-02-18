@@ -27,6 +27,7 @@ export const ProjectTextContainer = styled.div`
         text-align: right;
         float: right;
         margin-right: 1vw;
+        text-decoration: none;
     }
     .project-description {
         text-align: left;

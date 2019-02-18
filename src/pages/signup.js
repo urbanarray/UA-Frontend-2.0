@@ -1,8 +1,13 @@
 import React from 'react';
+import Form from 'react-bootstrap/Form';
 
 const Signup = () => {
     return (
-        <div>Signup</div>
+        <>
+            <Form>
+                <Form.Label>Email Address</Form.Label>
+            </Form>
+        </>
     )
 }
 

@@ -8,3 +8,12 @@ export const LandingPageLogo = styled.img`
     margin-top: 5vh;
     margin-bottom: 5vh;
 `;
+
+export const SmallLogo = styled.img`
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+`;

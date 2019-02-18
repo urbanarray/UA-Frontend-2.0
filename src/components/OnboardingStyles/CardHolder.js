@@ -27,3 +27,23 @@ export const GreenCard = styled.div`
         padding-right: 2vw;
     }
 `;
+
+export const ThreeStepCard = styled.div`
+    width: 30vw;
+    h3 {
+        text-align: center;
+        margin-top: 3vh;
+    }
+    p {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+`;
+
+export const ThreeStepNavContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+`;

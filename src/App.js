@@ -8,6 +8,7 @@ import LandingPage from './pages/landing';
 import SelectSkills from './pages/skill-selection';
 import Signup from './pages/signup';
 import Dashboard from './pages/dashboard';
+import GetInvolved from './pages/get-involved';
 import NoMatch from './pages/noMatch';
 
 import './App.css';
@@ -32,6 +33,10 @@ class App extends Component {
               <Route 
                 exact path={routes.SIGNUP}
                 component={Signup}
+              />
+              <Route 
+                exact path={routes.GET_INVOLVED} 
+                component={GetInvolved}
               />
               <Route 
                 exact path={routes.DASHBOARD}
