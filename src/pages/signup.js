@@ -1,13 +1,16 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
+import FormLabel from 'react-bootstrap/FormLabel';
+import FormControl from 'react-bootstrap/FormControl';
 
 const Signup = () => {
     return (
-        <>
+        <div>
             <Form>
-                <Form.Label>Email Address</Form.Label>
+                <FormLabel>Email Address</FormLabel>
+                <FormControl type="email" placeholder="Email address" />
             </Form>
-        </>
+        </div>
     )
 }
 

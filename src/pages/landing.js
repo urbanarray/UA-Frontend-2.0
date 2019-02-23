@@ -16,16 +16,6 @@ import { CardHolder, GreenCard} from '../components/OnboardingStyles/CardHolder'
 import { ProjectContainer, ProjectImage, ProjectTextContainer } from '../components/OnboardingStyles/ProjectContainer';
 import SocialIconContainer from '../components/SocialIconContainer';
 
-const ExternalNav = styled.div`
-    display: inline;
-    float: right;
-    padding-right: 2vw;
-    margin-top: 0;
-    margin-left: 0;
-    clear: both;
-    display: table;
-`;
-
 const GetInvolvedBtn = styled.button`
     margin-top: 5vh;
     margin-left: 42%;
@@ -40,19 +30,8 @@ const GetInvolvedBtn = styled.button`
 const LandingPage = () => {
     return (
         <div>
-                <ExternalNav>
-                    <a href="https://urbanarray.org/donate/" target="_blank" rel="noopener noreferrer">
-                        <Button style={{height: '6vh', fontSize: '1em', color: 'white', backgroundColor: '#4a99cb'}} size="large">Donate</Button>
-                    </a>
-                    <Link to="/get-involved">
-                        <Button style={{height: '6vh', fontSize: '1em', color: 'white', backgroundColor: '#91c63f'}} size="large">Get Involved</Button>
-                    </Link>
-                    <Link to="/signup">
-                        <Button style={{ height: '6vh', fontSize: '1em', color: 'white', backgroundColor: '#80cafe'}} size="large">Sign In</Button>
-                    </Link>
-                    <br />
-                    <LandingPageLogo src={colorlogo} />
-                </ExternalNav>
+            <LandingPageLogo src={colorlogo} />
+
 
             <Row style={{ textAlign: 'center' }}>
                 <h1>Welcome to Urban Array's Volunteer Platform</h1>

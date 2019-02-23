@@ -11,6 +11,7 @@ export const CardHolder = styled.div`
 export const GreenCard = styled.div`
     width: 25vw;
     height: 32vh;
+    min-height: 250px;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     background-color: #c4f970;

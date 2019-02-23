@@ -4,6 +4,7 @@ export const ProjectContainer = styled.div`
     display: flex;
     width: 35vw;
     height: 35vh;
+    min-height: 250px;
     border: 1px solid black;
     border-radius: 15px;
     background-color: white;

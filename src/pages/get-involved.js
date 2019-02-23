@@ -23,19 +23,19 @@ const GetInvolved = () => {
                 <CardHolder>
                     <ThreeStepCard>
                         <h3>First Step</h3>
-                        <img src={signupIcon} style={{ height: '10vh', width: 'auto', marginBottom: '1vh' }}/>
+                        <img src={signupIcon} style={{ height: '10vh', width: 'auto', marginBottom: '1vh' }} alt="signup"/>
                         <h4>Sign Up</h4>
                         <p>Let's get this process started by entering in some basic information.</p>
                     </ThreeStepCard>
                     <ThreeStepCard>
                         <h3>Second Step</h3>
-                        <img src={selectSkillsIcon} style={{ height: '10vh', width: 'auto', marginBottom: '1vh' }}/>
+                        <img src={selectSkillsIcon} style={{ height: '10vh', width: 'auto', marginBottom: '1vh' }} alt="select skills" />
                         <h4>Select Skills</h4>
                         <p>Everybody has skills they can offer or want to learn! Tell us how we can help you gain skills and contribute to your community.</p>
                     </ThreeStepCard>
                     <ThreeStepCard>
                         <h3>Third Step</h3>
-                        <img src={meetMember} style={{ height: '10vh', width: 'auto', marginBottom: '1vh'}} />
+                        <img src={meetMember} style={{ height: '10vh', width: 'auto', marginBottom: '1vh'}} alt="meet a member"/>
                         <h4>Interview with a Member</h4>
                         <p>We want to ensure that we're a good fit for each other. We hope that we can help you and your community.</p>
                     </ThreeStepCard> 
