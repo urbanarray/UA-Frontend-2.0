@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 
 import colorlogo from '../assets/images/colorlogo.png';
@@ -34,7 +33,7 @@ const LandingPage = () => {
 
 
             <Row style={{ textAlign: 'center' }}>
-                <h1>Welcome to Urban Array's Volunteer Platform</h1>
+                <h1>Welcome to Urban Array&apos;s Volunteer Platform</h1>
                 <h3 style={{ marginBottom: '10vh' }}>Build yourself, grow your community</h3>
 
                 <iframe width="784" height="441" title="UA-teaser" src="https://www.youtube.com/embed/k15z2UuCnDQ" frameBorder="0" allowFullScreen></iframe>
@@ -81,8 +80,8 @@ const LandingPage = () => {
                 </GreenCard>
                 <GreenCard>
                     <img src={icon2} style={{ height: '6vw', marginLeft: 'auto', marginRight: 'auto', marginTop: '3vh', opacity: '0.9'}} alt="economic participation"/>
-                    <h4>Members' Economic Participation</h4>
-                    <p>Members' participation is key. The benefits match the amount of effort.</p>
+                    <h4>Members&apos; Economic Participation</h4>
+                    <p>Members&apos; participation is key. The benefits match the amount of effort.</p>
                 </GreenCard>
                 <GreenCard>
                     <img src={icon3} style={{ height: '6vw', marginLeft: 'auto', marginRight: 'auto', marginTop: '3vh', opacity: '0.9'}} alt="community"/>
