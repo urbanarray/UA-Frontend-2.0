@@ -4,7 +4,7 @@
 
 Please fork and clone this repository to your machine. 
 
-Run `npm install` to add all of the dependencies, and then use `yarn start` to start the server. 
+Run `npm install` to add all of the dependencies.  It may be necessary to run `npm install jquery@1.9.1` and `npm install typescript@3.3.3333` to add peer dependencies if they are not added automatically. Use `yarn start` or `rpm run start` to start the development server.  The development server will run on [localhost port 3000.](http://localhost:3000) 
 
 Make sure you add the UA-Frontend-2.0 repository as a remote: 
 
