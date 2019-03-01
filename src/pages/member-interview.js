@@ -45,8 +45,6 @@ class MemberInterview extends Component {
               <Link to="/dashboard">
                 <OnboardingButton
                   style={{
-                    fontSize: "1em",
-                    padding: "1vh",
                     backgroundColor: "#4a99cb"
                   }}
                 >

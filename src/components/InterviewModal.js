@@ -6,7 +6,7 @@ import meetMember from "../assets/images/006-interview.svg";
 
 const StyledModal = Modal.styled`
   width: 20rem;
-  height: 23rem;
+  height: 25rem;
   padding: 1rem;
   display: grid;
   background-color: white;
@@ -50,8 +50,6 @@ class InterviewModal extends Component {
       <div>
         <OnboardingButton
           style={{
-            fontSize: "1em",
-            padding: "1vh",
             backgroundColor: "#91c63f"
           }}
           onClick={this.toggleModal}
@@ -93,8 +91,6 @@ class InterviewModal extends Component {
           />
           <OnboardingButton
             style={{
-              fontSize: "1em",
-              width: "20vw",
               margin: "auto",
               backgroundColor: "#91c63f"
             }}
