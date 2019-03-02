@@ -32,7 +32,7 @@ const Nav = () => {
     return (
         <NavBar>
             <Link to={'/'}>
-                <img src={Logo}/>
+                <img src={Logo} alt="Urban Array Logo"/>
             </Link>
             <Link to={'/signup'}>
                 <button>
