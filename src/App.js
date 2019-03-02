@@ -10,6 +10,7 @@ import Signup from './pages/signup';
 import Dashboard from './pages/dashboard';
 import GetInvolved from './pages/get-involved';
 import NoMatch from './pages/noMatch';
+import MemberInterview from './pages/member-interview';
 
 import './App.css';
 
@@ -41,6 +42,10 @@ class App extends Component {
               <Route 
                 exact path={routes.DASHBOARD}
                 component={Dashboard}
+              />
+               <Route 
+                exact path={routes.MEMBER_INTERVIEW}
+                component={MemberInterview}
               />
 
               <Route path="*" component={NoMatch} />
