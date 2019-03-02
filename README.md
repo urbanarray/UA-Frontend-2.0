@@ -4,7 +4,7 @@
 
 Please fork and clone this repository to your machine. 
 
-Run `npm install` to add all of the dependencies, and then use `yarn start` to start the server. 
+Run `npm install` to add all of the dependencies.  Use `yarn start` or `npm run start` to start the development server.  The development server will run on [localhost port 3000.](http://localhost:3000) 
 
 Make sure you add the UA-Frontend-2.0 repository as a remote: 
 
