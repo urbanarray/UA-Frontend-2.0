@@ -1,54 +1,35 @@
 const router = require('express').Router();
 const uuidv4 = require('uuid/v4');
+const models = require('../../models');
 
-let users = {
-    1: {
-        id: '1',
-        username: 'Robin Wieruch',
-    }, 
-    2: {
-        id: '2',
-        username: 'Hannah Werman',
-    },
-};
-
-let messages = {
-    1: {
-        id: '1',
-        text: 'Hello World',
-        userId: '1',
-    },
-    2: {
-        id: '2',
-        text: 'Bye World',
-        userId: '2',
-    },
-}
 
 // custom middleware
 router.use((req, res, next) => {
-    req.me = users[1];
+    req.context = {
+        models,
+        me: models.users[1]
+    }
     next();
 })
 
 // get all the users
 router.get('/', (req, res) => {
-    return res.send(Object.values(users))
+    return res.send(Object.values(req.context.models.users))
 })
 
 // get one user
 router.get('/:id', (req, res) => {
-    return res.send(users[req.params.userId])
+    return res.send(req.context.models.users[req.params.userId])
 })
 
 // get all the messages
 router.get('/messages', (req, res) => {
-    return res.send(Object.values(messages));
+    return res.send(Object.values(req.context.models.messages));
 })
 
 // get one message 
 router.get('/messages/:messageId', (req, res) => {
-    return res.send(messages[req.params.messageId]);
+    return res.send(req.context.models.messages[req.params.messageId]);
 })
 
 // create a new user
@@ -62,10 +43,10 @@ router.post('/messages', (req, res) => {
     const message = {
         id,
         text: req.body.text,
-        userId: req.me.id
+        userId: req.context.me.id
     }
 
-    messages[id] = message
+    req.context.models.messages[id] = message
     return res.send(message)
 })
 
@@ -92,7 +73,7 @@ router.delete('/:id', (req, res) => {
 
 // get the pseudo-authenticated user
 router.get('/session', (req, res) => {
-    return res.send(users[req.me.id]);
+    return res.send(req.context.models.users[req.me.id]);
 })
 
 module.exports = router
