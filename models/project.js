@@ -4,9 +4,9 @@ const project = (sequelize, DataTypes) => {
   });
 
   // projects have many users
-  Project.associate = (models) => {
-    Project.hasMany(models.User);
-  };
+//   Project.associate = (models) => {
+//     Project.belongsToMany(models.User);
+//   };
 
   return Project;
 };

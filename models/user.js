@@ -7,9 +7,9 @@ const user = (sequelize, DataTypes) => {
   });
 
   // user can belong to many projects
-  User.associate = (models) => {
-    User.hasMany(models.Project);
-  };
+//   User.associate = (models) => {
+//     User.belongsToMany(models.Project);
+//   };
 
   // let the user log in either by username or by email address
   User.findbyLogin = async (login) => {
