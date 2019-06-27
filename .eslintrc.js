@@ -1,11 +1,12 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true,
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+        "airbnb-base",
+        "plugin:node/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -18,9 +19,16 @@ module.exports = {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    parser: "babel-eslint",
     "plugins": [
         "react"
     ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "rules": {
-    }
+        "max-len": [1, 70, 2, {ignoreComments: true}]
+    },
 };
